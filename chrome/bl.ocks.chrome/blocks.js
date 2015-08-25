@@ -5,7 +5,7 @@ observer.observe(document.documentElement, {childList: true, subtree: true});
 redraw();
 
 function redraw() {
-  var container = document.querySelector(".gist-sidebar");
+  var container = document.querySelector(".gistrepository-sidebar");
   if (!container) return;
 
   var parts = location.pathname.substring(1).split("/"),
